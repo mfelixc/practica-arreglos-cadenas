@@ -9,6 +9,12 @@ cin >> N;
     for (int i = 0; i < N; i++) {
         cin >> palabra;
         palindromo = true;
+    for (int i = 0; i < palabra.length() / 2; i++) {
+        if (palabra[i] != palabra[palabra.length() - 1 - i]) {
+            palindromo = false;
+            break;
+             }
+        }
     }
 return 0;
 }
