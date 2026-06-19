@@ -15,6 +15,10 @@ cin >> N;
             break;
              }
         }
+        if (palindromo)
+            cout << "P" << endl;
+        else
+            cout << "NP" << endl;
     }
 return 0;
 }
