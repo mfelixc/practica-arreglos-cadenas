@@ -11,19 +11,19 @@ int main() {
         if (c >= 'a' && c <= 'z')
             letras += c;
     }
-    
+
     sort(letras.begin(), letras.end());
     
     int pos = 0;
 
     for (int i = 0; i < s.size(); i++) {
-    if (s[i] >= 'a' && s[i] <= 'z') {
-        s[i] = letras[pos];
-        pos++;
+        if (s[i] >= 'a' && s[i] <= 'z') {
+            s[i] = letras[pos];
+            pos++;
         }
     }
 
-    cout << letras << endl;
+    cout << s << endl;
 
     return 0;
 }
