@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 using namespace std;
 
 int main() {
@@ -10,6 +11,8 @@ int main() {
         if (c >= 'a' && c <= 'z')
             letras += c;
     }
+    
+    sort(letras.begin(), letras.end());
 
     cout << letras << endl;
 
